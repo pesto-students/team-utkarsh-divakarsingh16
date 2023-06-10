@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday message</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label id="message">Message?</label>
+        <input for="message" type="text" required />
+      </div>
+      <div>
+        <label id="email">Email adress ?</label>
+        <input
+          for="email"
+          type="text"
+          pattern="[a-zA-Z0-9-_\.]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*"
+          required
+        />
+      </div>
+      <div>
+        <label id="date">Date to send?</label>
+        <input for="date" type="date" required />
+      </div>
+      <div>
+        <label id="color">message color</label>
+        <input for="color" type="color" />
+      </div>
+      <div>
+        <label id="number">message color</label>
+        <input for="number" type="number" value="0" min="0" max="10" />
+      </div>
+      <div>
+        <label id="range">message color</label>
+        <input for="range" type="range" value="20" min="0" max="50" />
+      </div>
+      <div>
+        <button type="submit">Send Birthday Message</button>
+      </div>
+    </form>
+  </body>
+</html>
